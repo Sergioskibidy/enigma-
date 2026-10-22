@@ -1,6 +1,6 @@
 /* file : Enigma++.c */
 /* co-author : Jouke Willem van der Heide (j.w.van.der.heide.1@student.rug.nl) */
-/* co-author : */
+/* co-author : Sergio Zhou Wu (s.zhou.wu@student.rug.nl)*/
 /* date : Mon Okt 9 2026 */
 /* version: 1.0 */
 /* Description:
