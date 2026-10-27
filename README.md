@@ -1,2 +1,2 @@
 # enigma-
-The project thingy for cs into
+The project thingy for cs intro
