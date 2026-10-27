@@ -18,25 +18,6 @@
 int binary[8]; //Used for binary conversion
 char text[8000]; //inputted text
 
-void *safeMalloc(int n) {
-    void *p = malloc(n);
-    if (p == NULL) {
-        printf("Error: malloc(%d) failed. Out of memory?\n", n);
-        exit(EXIT_FAILURE);
-    }
-    return p;
-}
-
-void *safeCalloc(int n, int size) {
-    void *p = calloc(n, size);
-    if (p == NULL) {
-        printf("Error: malloc(%d) failed. Out of memory?\n", n);
-        exit(EXIT_FAILURE);
-    }
-    return p;
-}
-// Can be removed ig because of your hate towards these
-//--------------------------------------------------------------------------
 
 // Loop to cover excessive characters, to prevent keys with more than 55 numbers or spaces etc.
 void removeExcessiveText() {
@@ -80,7 +61,6 @@ int linConGen(int number) {
     return newNumber;
 }
 
-//add validation checks
 //This is the encryption algorithm for the first algorithm
 void simpleEncryption(int key) { 
     int i = 0;
@@ -102,7 +82,6 @@ void simpleEncryption(int key) {
     printf("\n");
 }
 
-//add validation checks
 //This is the decryption algorithm for the first algorithm
 void simpleDecryption(int key) {
     int i = 0;
@@ -194,7 +173,6 @@ void linDecryption(int key) {
     printf("%s\n",decypheredText);
 }
 
-//add validation check
 //This is the encryption algorithm for the third algorithm
 void subtractiveGenEncryption(int keyNums[]) {
     int temp;
@@ -221,7 +199,6 @@ void subtractiveGenEncryption(int keyNums[]) {
     printf("\n");
 }
 
-//add validation check
 //This is the decryption algorithm for the third algorithm
 void subtractiveGenDecryption(int keyNums[]) {
     int temp = 0;
